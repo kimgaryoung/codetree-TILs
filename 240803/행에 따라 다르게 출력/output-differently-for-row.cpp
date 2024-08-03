@@ -10,15 +10,19 @@ int main() {
      for(int i=0; i<n; i++)
      {
         for(int j=0; j<n; j++)
-        {
-            if(i%2==0)
+        {   
+            if(i%2==0 && i!=0)
             {
-              cout<<n*i+n*i*1/2+j+1<<" ";
+              cout<<n*i+n+j+1<<" ";
             }
             else if(i%2!=0)
             {
                 cout<<(n+1)+i+2*j<<" ";
 
+            }
+            else
+            {
+                cout<<j+1<<" ";
             }
         }
         cout<<"\n";
