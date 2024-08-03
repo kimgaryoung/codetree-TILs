@@ -17,7 +17,7 @@ int main() {
             }
             else if(i%2!=0)
             {
-                cout<<((n-1)*(i-1))+(n*i)+2+i*j<<" ";
+                cout<<(n+1)+i+2*j<<" ";
 
             }
         }
