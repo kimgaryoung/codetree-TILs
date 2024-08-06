@@ -11,7 +11,7 @@ int main() {
         for(int j=1; j<=n; j++)
         {
             cout<<i<<" * "<<j<<" = "<<i*j;
-            if(j<3)
+            if(j<n)
             {
                 cout<<", ";
             }
