@@ -6,7 +6,7 @@ void func(int n, int m)
     {
         for(int j=0; j<m; j++)
         {
-            cout<<"*";
+            cout<<"1";
         }
         cout<<"\n";
     }
