@@ -4,18 +4,23 @@ using namespace std;
 void func(int a, int b)
 {   
    
-   
-
-
-    if(a>b)
+   if(a==1||b==1)
+   {
+    cout<<1;
+   }
+    else if(a>b)
     {
-        cout<<a%b;
+
+    cout<<a%b;
+
     }
     else if(a<b)
     {
-        
         cout<<b%a;
     }
+    
+   
+   
     
     
     
