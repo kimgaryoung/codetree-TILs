@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int func(int a, int b)
+void func(int a, int b)
 {   
     int tmp;
     while (b != 0) {
@@ -9,7 +9,7 @@ int func(int a, int b)
         a = b;
         b = tmp;
     }
-    return a;
+    cout<<a;
     
     
     
@@ -20,6 +20,6 @@ int main() {
     int n,m;
     cin>>n>>m;
 
-   cout<<func(n, m);
+   func(n, m);
     return 0;
 }
