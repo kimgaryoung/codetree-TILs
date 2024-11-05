@@ -11,6 +11,10 @@ string func(int a)
             {
                 return "Yes";
             }
+            else if(a%10==0)
+            {
+                return "No"
+            }
             
         }
         else
