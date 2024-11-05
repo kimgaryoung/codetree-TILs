@@ -3,6 +3,11 @@ using namespace std;
 
 void func(int a, int b)
 {   
+    if(a==0||b==0)
+    {
+        cout<<0;
+    }
+
     if(a>b)
     {
         cout<<a%b;
@@ -16,6 +21,8 @@ void func(int a, int b)
     {
         cout<<1;
     }
+    
+    
 } 
 
 int main() {
