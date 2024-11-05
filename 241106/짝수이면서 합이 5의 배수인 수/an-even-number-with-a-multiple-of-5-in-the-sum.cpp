@@ -13,7 +13,7 @@ string func(int a)
             }
             else if(a%10==0)
             {
-                return "No"
+                return "No";
             }
             
         }
