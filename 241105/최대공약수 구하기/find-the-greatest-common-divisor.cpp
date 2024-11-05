@@ -4,10 +4,7 @@ using namespace std;
 void func(int a, int b)
 {   
    
-    if (a==0||b==0)
-    {
-        cout<<0;
-    }
+   
 
 
     if(a>b)
