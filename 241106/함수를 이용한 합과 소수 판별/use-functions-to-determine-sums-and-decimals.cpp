@@ -35,7 +35,7 @@ int main() {
 
     int cnt=0;
 
-    for(int i=a; i<b; i++)
+    for(int i=a; i<=b; i++)
     {
         if(prim(i) && even(i))
         {
