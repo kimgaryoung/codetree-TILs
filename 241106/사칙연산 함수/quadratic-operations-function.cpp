@@ -35,7 +35,7 @@ int main() {
     
     if(func(a1,b1,c1)==0)
     {
-        cout<<"false";
+        cout<<"False";
     }
     else
     {
