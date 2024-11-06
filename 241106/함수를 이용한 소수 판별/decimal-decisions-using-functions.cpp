@@ -2,9 +2,15 @@
 using namespace std;
 
 bool func(int n)
-{
+{   
+    if(n==1)
+    {
+        return 1;
+    }
+    else{
     for(int j=2; j<n; j++)
     {
+
         if(n%j==0)
         {
             return 0;
@@ -12,8 +18,9 @@ bool func(int n)
         
         
     }
-    return 1;
     
+    return 1;
+    }
 
 }
 
