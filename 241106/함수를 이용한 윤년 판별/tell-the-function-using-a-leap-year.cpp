@@ -7,7 +7,7 @@ bool year(int n)
     {
         return true;
     }
-    else if(n%100==0&& n%400!=0)
+    else if(n%100==0 && n%400!=0)
     {
         return false;
     }
@@ -22,7 +22,7 @@ int main() {
 
     cin>>y;
 
-    if(year(y)==1)
+    if(year(y))
     {
         cout<<"true";
 
