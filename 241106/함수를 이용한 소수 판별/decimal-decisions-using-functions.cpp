@@ -5,7 +5,7 @@ bool func(int n)
 {   
     if(n==1)
     {
-        return 1;
+        return 0;
     }
     else{
     for(int j=2; j<n; j++)
