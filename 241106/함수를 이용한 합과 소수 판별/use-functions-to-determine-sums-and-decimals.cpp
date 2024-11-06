@@ -10,15 +10,19 @@ bool prim(int n)
         {
             return 0;
         }
+        else
+        {
+            return 1;
+        }
     
     }
 
-    return 1;
+   
 }
 
 bool even(int m)
 {
-    if(((m/10) +(m%10))%2==0)
+    if(((m/10)+(m%10))%2==0)
     {
         return 1;
     }
