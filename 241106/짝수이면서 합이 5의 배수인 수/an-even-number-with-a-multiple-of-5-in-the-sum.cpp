@@ -7,11 +7,13 @@ string func(int a)
     
         if(a%2==0||a%4==0||a%6==0||a%8==0)
         {
-            if(((a%10)+(a-(a%10)))%5==0)
+            if(((a%10)+(a-(a%10)))%5==0 )
             {
                 return "Yes";
             }
-           
+           else{
+            return "No";
+           }
             
         }
         else
