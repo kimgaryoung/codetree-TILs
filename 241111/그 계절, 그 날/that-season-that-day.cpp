@@ -10,7 +10,7 @@ bool year(int y)
         {
             return 1;
         }
-        else if(y%100==0 &&  y%400!=0)
+        else if(y%100==0 )
         {
             return 0;
         }
