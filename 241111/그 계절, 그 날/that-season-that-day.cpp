@@ -28,7 +28,7 @@ void mou31(int y, int m, int d)
     {
         cout<<"Winter";
     }
-    else if(m==5)
+    else if(m==3||m==5)
     {
         cout<<"Spring";
     }
@@ -47,7 +47,7 @@ void mou31(int y, int m, int d)
 
 void mou30(int y, int m, int d)
 {
-    if(m==3 ||m==4)
+    ifm==4)
     {
         cout<<"Spring";
     }
@@ -85,7 +85,7 @@ int main() {
             cout<<"-1";
         }
     }
-    else if(m==12||m==1||m==5||m==7||m==8||m==10)
+    else if(m==12||m==1||m==5||m==7||m==8||m==10||m==3)
     {
         
         mou31(y,m,d);
