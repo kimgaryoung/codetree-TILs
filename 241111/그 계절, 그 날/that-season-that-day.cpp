@@ -37,9 +37,7 @@ void mou31(int y, int m, int d)
     {
         cout<<"Fall";
     }
-    else{
-        cout<<"-1";
-    }
+  
 }
 
 void mou30(int y, int m, int d)
@@ -57,9 +55,7 @@ void mou30(int y, int m, int d)
     {
         cout<<"Fall";
     }
-    else{
-        cout<<"-1";
-    }
+   
 }
 
 int main() {
@@ -92,6 +88,10 @@ int main() {
     else if((m==4||m==6||m==9||m==11) && d<=30)
     {
         mou30(y,m,d);
+    }
+    else
+    {
+        cout<<"-1";
     }
     
     
