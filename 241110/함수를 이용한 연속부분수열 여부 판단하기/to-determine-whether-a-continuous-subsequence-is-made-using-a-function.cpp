@@ -9,7 +9,7 @@ bool func(int n)
 {
     for(int k=0; k<n2; k++)
     { 
-        if(Arr[k+n]=Brr[k])
+        if(Arr[k+n]==Brr[k])
             return 1;
        
     }
