@@ -6,20 +6,17 @@ bool year(int y)
 {
     if(y%4==0)
     {
-        if(y%100==0 && y%400==0)
+        if(y%100==0)
         {
-            return 1;
-        }
-        else if(y%100==0 )
-        {
+            if(y%400==0)
+            {
+                return 1;
+            }
             return 0;
         }
-        else
-        {
-            return 1;
-        }
+        return 1;
     }
-    return 0;
+   
 }
 
 void mou31(int y, int m, int d)
