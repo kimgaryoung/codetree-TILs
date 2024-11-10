@@ -73,7 +73,7 @@ int main() {
         {
             cout<<"Winter";
         }
-        else if(d<=28)
+        else if(!year(y)&& d<=28)
         {
             cout<<"Winter";
         }
