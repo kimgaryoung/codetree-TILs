@@ -70,11 +70,19 @@ int main() {
     
     cin>>y>>m>>d;
 
-    if(m==2 && year(y))
+    if(m==2)
     {
-        if(d<=29)
+        if(year(y) && d<=29)
         {
             cout<<"Winter";
+        }
+        else if(d<=28)
+        {
+            cout<<"Winter";
+        }
+        else
+        {
+            cout<<"-1";
         }
     }
     else if(m==12||m==1||m==5||m==7||m==8||m==10)
