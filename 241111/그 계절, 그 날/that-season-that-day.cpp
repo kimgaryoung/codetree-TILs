@@ -47,7 +47,7 @@ void mou31(int y, int m, int d)
 
 void mou30(int y, int m, int d)
 {
-    ifm==4)
+    if(m==4)
     {
         cout<<"Spring";
     }
