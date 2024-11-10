@@ -16,7 +16,7 @@ bool year(int y)
         }
         return 1;
     }
-   
+   return 0;
 }
 
 void mou31(int y, int m, int d)
