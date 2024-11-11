@@ -2,39 +2,17 @@
 #include<string>
 using namespace std;
 
-bool pail(string str)
+bool pail(string &str)
 {
-   
-    string tmp;
     for(int i=0; i<str.size(); i++)
     {
-        tmp[i]=str[str.size()-1-i];
-
-    }
-
-    int k=0;
-
-    for(int j=0; j<tmp.size(); j++)
-    {
-        if(tmp[j]==str[j])
+        if(str[i]!=str[str.size()-1-i])
         {
-            k++;
+            return false;
         }
     }
+    return true;
     
-
-
-    if(k==int(str.size()))
-    {
-        return 1;
-
-    }
-    else
-    {
-        return 0;
-    }
-    
-
 }
 
 
