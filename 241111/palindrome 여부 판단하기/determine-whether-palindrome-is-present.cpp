@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 
-void pail(string str)
+bool pail(string str)
 {
    
     string tmp;
@@ -26,12 +26,12 @@ void pail(string str)
 
     if(k==int(str.size()))
     {
-        cout<<"Yes";
+        return 1;
 
     }
     else
     {
-        cout<<"No";
+        return 0;
     }
     
 
@@ -47,6 +47,13 @@ int main() {
     pail(s);
 
 
+    if(pail(s))
+    {
+        cout<<"Yes";
+    }
+    else{
+        cout<<"No";
+    }
 
     return 0;
 }
