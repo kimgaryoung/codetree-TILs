@@ -14,7 +14,7 @@ bool pail(string str)
 
     int k=0;
 
-    for(int j=0; j<str.size(); j++)
+    for(int j=0; j<tmp.size(); j++)
     {
         if(tmp[j]==str[j])
         {
