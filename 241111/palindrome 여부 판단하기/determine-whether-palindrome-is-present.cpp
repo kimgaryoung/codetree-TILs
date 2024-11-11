@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 
-bool pail(string &str)
+bool pail(string str)
 {
     for(int i=0; i<str.size(); i++)
     {
@@ -22,7 +22,7 @@ int main() {
     string s;
     cin>>s;
 
-    pail(s);
+    
 
 
     if(pail(s))
