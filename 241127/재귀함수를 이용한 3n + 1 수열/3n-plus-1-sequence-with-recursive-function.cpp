@@ -4,7 +4,7 @@ using namespace std;
 int count=0;
 int func(int n)
 {
-    if(n<=1)
+    if(n==1)
     {
         return count;
     }
@@ -13,13 +13,13 @@ int func(int n)
     if(n%2==0)
     {
         count++;
-        func(n/2);
+        return func(n/2);
             
     }   
     else if(n%2!=0)
     {
         count++;
-        func(3*n+1);
+        return func(3*n+1);
     }    
 
 
