@@ -15,7 +15,8 @@ int main() {
 
     sort(arr,arr+2*n);
 
-    int max,sum=0;
+    int max=0;
+    int sum=0; 
     
     for(int j=0; j<n; j++)
     {
