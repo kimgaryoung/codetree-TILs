@@ -26,15 +26,25 @@ int main() {
     sort(arr,arr+n);
     sort(brr,brr+n);
     
+    int count=0;
     for(int j=0;j<n; j++)
     {
         if(arr[j]!=brr[j])
         {
             cout<<"No";
+            
+        }
+        else
+        {
+            count++;
         }
     }
 
-    cout<<"Yes";
+    if(count==n)
+    {
+        cout<<"Yes";
+    }
+    
 
     return 0;
 }
