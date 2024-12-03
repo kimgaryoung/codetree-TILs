@@ -29,13 +29,9 @@ int main() {
     int count=0;
     for(int j=0;j<n; j++)
     {
-        if(arr[j]!=brr[j])
+        if(arr[j]==brr[j])
         {
-            cout<<"No";
-            
-        }
-        else
-        {
+       
             count++;
         }
     }
@@ -43,6 +39,10 @@ int main() {
     if(count==n)
     {
         cout<<"Yes";
+    }
+    else
+    {
+        cout<<"No";
     }
     
 
