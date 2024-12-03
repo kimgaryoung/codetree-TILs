@@ -17,9 +17,9 @@ int main() {
     }
 
     
-    for(int i=0; i<n; i++)
+    for(int k=0; k<n; k++)
     {
-        cin>>brr[i];
+        cin>>brr[k];
         
     }
 
