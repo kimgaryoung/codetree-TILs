@@ -7,7 +7,7 @@ int main() {
     int n;
     cin>>n;
 
-    int arr[1000];
+    int arr[2*n];
     for(int i=0; i<2*n; i++)
     {
         cin>>arr[i];
@@ -17,7 +17,7 @@ int main() {
 
     int max=0;
     int sum=0; 
-    
+
     for(int j=0; j<n; j++)
     {
         sum=arr[j]+arr[2*n-j-1];
