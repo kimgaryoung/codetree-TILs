@@ -16,17 +16,18 @@ int main() {
         cin>>arr[i];
     }
 
-    sort(arr, arr+n);
-    int m=(1+n)/2;
+    
+    
    
-    for(int i=0; i<m; i++)
+   
+    for(int i=0; i<n; i+=2)
     {
-        cout<<arr[i]<<" ";
+       sort(arr,arr+i+1);
+       cout<<arr[i/2]<<" ";
+       
     }
 
     
-
-
 
 
 
