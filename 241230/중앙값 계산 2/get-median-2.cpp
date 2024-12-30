@@ -22,6 +22,10 @@ int main() {
     {
         m=n/2;
     }
+    else if(n==1)
+    {
+        m=1;
+    }
     else
     {
         m=(n+1)/2;
