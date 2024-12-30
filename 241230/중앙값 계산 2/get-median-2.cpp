@@ -17,15 +17,19 @@ int main() {
     }
 
     sort(arr, arr+n);
-
-   float m=(arr[0]+arr[n-1])/2;
-    int cnt=0;
-    for(int i=0; i<n; i++)
+    int m;
+    if(n%2==0)
     {
-        if(arr[i]<=m)
-        {
-            cout<<arr[i]<<" ";
-        }
+        m=n/2;
+    }
+    else
+    {
+        m=(n+1)/2;
+    }
+   
+    for(int i=0; i<m; i++)
+    {
+        cout<<arr[i]<<" ";
     }
 
     
