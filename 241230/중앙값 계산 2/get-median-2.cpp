@@ -17,19 +17,7 @@ int main() {
     }
 
     sort(arr, arr+n);
-    int m;
-    if(n%2==0)
-    {
-        m=n/2;
-    }
-    else if(n==1)
-    {
-        m=1;
-    }
-    else
-    {
-        m=(n+1)/2;
-    }
+    int m=(1+n)/2;
    
     for(int i=0; i<m; i++)
     {
