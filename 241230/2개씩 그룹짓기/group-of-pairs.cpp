@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
     int n;
-    int arr[1000];
+    
     
     cin>>n;
+    int arr[2*n];
     for(int i=0; i<2*n; i++)
     {
         cin>>arr[i];
