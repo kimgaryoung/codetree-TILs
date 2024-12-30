@@ -30,15 +30,16 @@ int main() {
         {
             cnt++;
         }
-        else
-        {
-            cout<<"NO";
-        }
+        
     }
 
     if(cnt==n)
     {
         cout<<"Yes";
+    }
+    else
+    {
+        cout<<"No";
     }
 
     return 0;
