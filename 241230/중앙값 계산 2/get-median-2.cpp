@@ -18,7 +18,7 @@ int main() {
 
     sort(arr, arr+n);
 
-   int m=(arr[0]+arr[n-1])/2;
+   float m=(arr[0]+arr[n-1])/2;
     int cnt=0;
     for(int i=0; i<n; i++)
     {
