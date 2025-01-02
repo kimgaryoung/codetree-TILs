@@ -5,21 +5,21 @@ using namespace std;
 
 class Code {
     public:
-    string product_name;
-    int product_code;
+        string product_name;
+        int product_code;
 
-    Code(product_name="codetree",product_code=50)
+    Code(string product_name="codetree", int product_code=50)
     {
-        this->product_name =product_name;
-        this ->product_code =product_code;
+        this->product_name=product_name;
+        this->product_code=product_code;
 
     }
 
-    Code(){}
+
 
     void print()
     {
-        cout<<"product "<<product_code<<" is "<<product_name;
+        cout<<"product "<<product_code<<" is "<<product_name<<"\n";
     }
 
     
@@ -31,15 +31,20 @@ class Code {
 
 int main() {
 
+    Code c1;
+    c1.print();
+
     string product_name;
     int product_code;
-    Code c;
-    c.print();
+   
+
     cin >> product_name >> product_code;
 
-    Code(product_name, product_code);
+    Code c2= Code(product_name, product_code);
+   
+   
 
-    c.print();
+    c2.print();
 
    
 }
