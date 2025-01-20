@@ -24,7 +24,7 @@ public:
 
 // 날짜 기준 정렬을 위한 비교 함수
 bool compare( rain& r1,  rain& r2) {
-    return r1.date < r2.date;
+    return r1.date >r2.date;
 }
 
 int main() {
