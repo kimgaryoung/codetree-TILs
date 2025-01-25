@@ -51,7 +51,8 @@ int main() {
         arr[i]=c(name, h, w);
         
     }
-
+    cout<<fixed;
+    cout.precision(1);
     sort(arr, arr+5, cmp_name);
     cout<<"name"<<"\n";
 
