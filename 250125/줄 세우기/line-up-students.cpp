@@ -6,12 +6,13 @@ using namespace std;
 class c
 {
     public: 
-        int h,w;
+        int h,w,num;
         
-    c(int h,int w)
+    c(int h,int w, int num)
     {
         this -> h =h; 
         this -> w =w;
+        this -> num =num;
     }
     c(){};
 
@@ -24,11 +25,11 @@ bool cmp (c fir, c sec)
     {
         if(fir.w==sec.w)
         {
-            return 0;
+           return fir.num<sec.num;
         }
         else
         {
-            return fir.w>sec.w;
+            return fir.w > sec.w;
         }
     }
     else{
@@ -51,7 +52,7 @@ int main() {
 
         cin>>h>>w;
 
-        arr[i]=c(h,w);
+        arr[i]=c(h,w,i+1);
         
 
     }
@@ -60,7 +61,7 @@ int main() {
 
     for(int i=0; i<n; i++)
     {
-        cout<<arr[i].h<<" "<<arr[i].w<<" "<<n-i<<"\n";
+        cout<<arr[i].h<<" "<<arr[i].w<<" "<<arr[i].num<<"\n";
     }
     // Please write your code here.
     return 0;
