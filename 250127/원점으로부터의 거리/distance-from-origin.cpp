@@ -34,13 +34,18 @@ int main() {
         int x,y;
         cin>>x>>y;
       
-        if(y<0)
+        if(y<0 && x>0)
         {
            y=y*(-1);
         }
-        else if(x<0)
+        else if(x<0 && y>0)
         {
             x=x*(-1);
+        }
+        else if(x<0 && y<0)
+        {
+             y=y*(-1);
+             x=x*(-1);
         }
 
          int k=x+y;
