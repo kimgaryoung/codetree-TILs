@@ -15,15 +15,18 @@ int main() {
  
     while(true)
     {
-        if(d==a && e==b&& f==c)
-            break;
-    if(a==11&&b==11&&c==11)
-    {
-        cout<<"-1";
-        break;
-    }
+       if(a==11&&b==11&&c==11){
+                m=-1;
+                break;
+       }
 
-        m++;
+       else if(d==a && e==b && f==c)
+            break;
+        
+        else{
+
+
+        ++m;
         f++;
         if(f==60)
         {
@@ -36,8 +39,8 @@ int main() {
             d++;
             e=0;
         }
-
-
+        }
+       
         
     }
 
