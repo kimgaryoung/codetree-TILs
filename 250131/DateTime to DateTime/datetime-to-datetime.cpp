@@ -16,11 +16,11 @@ int main() {
 
         if(a==11&&b==11&&c==11)
         {
-            m=-1;
+           
             cout<<"0";
         }
         else{
-            m=-1;
+          
             cout<<"-1";
         }
        
@@ -33,12 +33,8 @@ int main() {
  
     while(true)
     {
-       
         if(d==a && e==b && f==c)
             break;
-        
-        else{
-
 
         ++m;
         f++;
@@ -53,7 +49,7 @@ int main() {
             d++;
             e=0;
         }
-        }
+        
        
         
     }
