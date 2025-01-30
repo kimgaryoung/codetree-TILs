@@ -7,6 +7,17 @@ int main() {
     int a,b,c;
     cin>>a>>b>>c;
 
+    int d=(a*24*60+b*60+c)-(11*24*60+11*60+11);
+
+    if(d<0)
+    {
+        cout<<-1;
+    }
+    else{
+        cout<<d;
+    }
+
+    /*
 
     int d=11,e=11,f=11;
 
@@ -29,15 +40,14 @@ int main() {
     }
     else{
    
-
- 
     while(true)
     {
         if(d==a && e==b && f==c)
             break;
 
-        ++m;
+        m++;
         f++;
+
         if(f==60)
         {
             e++;
@@ -50,8 +60,6 @@ int main() {
             e=0;
         }
         
-       
-        
     }
 
 
@@ -59,4 +67,5 @@ int main() {
     }
     // Please write your code here.
     return 0;
+    */
 }
