@@ -9,21 +9,28 @@ int main() {
     cin>>a>>b>>c>>d;
 
 
-    int min=0;
+    int min=b,hour=a,m=0;
 
-   if(b-d<0){
+  while(true)
+  {
+    if(hour==c&&min==d)
+        break;
 
-        min=(60+b-d)+(c-a-1)*60;
+    m++;
+    min++;
 
-   }else
-   {
+    if(min==60)
+    {
+        hour++;
+        min=0;
 
-        min=(b-d) +(c-a)*60;
-   
-   }
+    }
 
 
-    cout<<min;
+  }
+
+
+    cout<<m;
 
 
     
