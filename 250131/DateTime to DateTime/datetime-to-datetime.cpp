@@ -12,15 +12,29 @@ int main() {
 
     int m=0;
 
+    if(a<=11&&b<=11&&c<=11){
+
+        if(a==11&&b==11&&c==11)
+        {
+            m=-1;
+            cout<<"0";
+        }
+        else{
+            m=-1;
+            cout<<"-1";
+        }
+       
+       
+                
+    }
+    else{
+   
+
  
     while(true)
     {
-       if(a<11&&b<=11&&c<=11){
-                m=-1;
-                break;
-       }
-
-       else if(d==a && e==b && f==c)
+       
+        if(d==a && e==b && f==c)
             break;
         
         else{
@@ -46,6 +60,7 @@ int main() {
 
 
     cout<<m;
+    }
     // Please write your code here.
     return 0;
 }
