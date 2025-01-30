@@ -15,7 +15,7 @@ int main() {
  
     while(true)
     {
-       if(a==11&&b==11&&c==11){
+       if(a<11&&b<=11&&c<=11){
                 m=-1;
                 break;
        }
