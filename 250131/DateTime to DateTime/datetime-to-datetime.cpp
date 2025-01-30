@@ -12,14 +12,16 @@ int main() {
 
     int m=0;
 
-    if(a==11&&b==11&&c==11)
-    {
-        cout<<"-1";
-    }
+ 
     while(true)
     {
         if(d==a && e==b&& f==c)
             break;
+    if(a==11&&b==11&&c==11)
+    {
+        cout<<"-1";
+        break;
+    }
 
         m++;
         f++;
