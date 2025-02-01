@@ -24,7 +24,7 @@ int main() {
         }
     }
 
-    d1=d1+num;
+    d1=d1+num+1;
 
  
 
