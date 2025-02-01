@@ -15,7 +15,16 @@ int main() {
 
     string arr[7]={"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
 
+    int num=0;
+    for(int i=0; i<7; i++)
+    {
+        if(arr[i]==s)
+        {
+            num=i;
+        }
+    }
 
+    d1=d1+num;
 
  
 
@@ -35,10 +44,10 @@ int main() {
     }
     d2_day+=d2;
 
- 
+    
 
 
-    int k=0;
+    int k=1;
     while(true)
     {
         if(d1_day>=d2_day)
