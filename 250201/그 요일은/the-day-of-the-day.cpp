@@ -24,11 +24,11 @@ int main() {
         }
     }
 
-    d1=d1+num+1;
+    d1=d1+num;
 
  
 
-   int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+   int a[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
 
 
     int d1_day=0,d2_day=0;
@@ -44,19 +44,36 @@ int main() {
     }
     d2_day+=d2;
 
-    
+   
 
 
-    int k=1;
+    int k=0;
     while(true)
     {
-        if(d1_day>=d2_day)
+      
+       
+       
+        if(d1_day>d2_day)
             break;
+        else if(d1_day==d2_day)
+        {
+            k++;
+            break;    
+        }
+        else
+        {
+            d1_day+=7;
+             k++;
 
-        d1_day+=7;
-        k++;
+        }
+        
+       
+       
+             
+        
+      
+         
     }
-
 
     cout<<k;
 
