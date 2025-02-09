@@ -25,10 +25,10 @@ int main() {
         }
     }
 
-    sort(arr,arr+k);
+    sort(arr,arr+n);
 
-   
-        cout<<arr[k-1];
+   cout<<arr[n-1];
+    
     
     // Please write your code here.
     return 0;
