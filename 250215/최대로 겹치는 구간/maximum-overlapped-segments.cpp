@@ -8,22 +8,29 @@ int main() {
     int n;
     cin>>n;
 
-    int a[100];
-    int b[100];
+    int a[200];
+    int b[200];
 
     for(int i=0; i<n; i++)
     {
         cin>>a[i]>>b[i];
+        a[i]+=100;
+        b[i]+=100;
+
+       
         
     }
 
 
-    int k[100];
-    for(int i=0; i<100; i++)
+    int k[200];
+    for(int i=0; i<200; i++)
     {
         k[i]=0;
     }
+
+    
     int x=0;
+
     while(true)
     {
         if(x>n)
@@ -32,16 +39,18 @@ int main() {
         for(int i=a[x]; i<b[x]; i++)
         {
             k[i]++;
+
+            //cout<<i<<" "<<a[x]<<" "<<b[x]<<" "<<k[i]<<"\n";
            
         }
         x++;
    
-        
+    
     }
+  
+    sort(k,k+200);
 
-    sort(k,k+n);
-
-    cout<<k[n+1];
+    cout<<k[199];
 
     
 
