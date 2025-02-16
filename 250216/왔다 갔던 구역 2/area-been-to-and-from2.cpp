@@ -52,7 +52,7 @@ int main() {
 
     for(int i=0; i<n; i++)
     {   
-       if(a[i]<b[i])
+       if(a[i]<=b[i])
             for(int j=a[i]; j<b[i]; j++)
             {
                 arr[j]++;
