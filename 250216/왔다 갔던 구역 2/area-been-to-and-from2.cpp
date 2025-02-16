@@ -11,7 +11,7 @@ int main() {
 
     int cur=0;
 
-    int arr[2000]={0};
+    int arr[2001]={0};
 
     for(int i=0; i<n; i++)
     {
@@ -79,7 +79,7 @@ int main() {
 
 
     int count=0; 
-    for(int i=0; i<2000; i++)
+    for(int i=0; i<2001; i++)
     {
         if(arr[i]>=2)
         {
