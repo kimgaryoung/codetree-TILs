@@ -33,8 +33,8 @@ int main() {
         }
         else if(c=='L')
         {  
-            a[i]=cur-x;
-            b[i]=cur;
+            a[i]=cur;
+            b[i]=cur-x;
 
            cur=cur-x;
 
@@ -52,11 +52,19 @@ int main() {
 
     for(int i=0; i<n; i++)
     {   
-       
-        for(int j=a[i]; j<b[i]; j++)
-        {
-            arr[j]++;
+       if(a[i]<b[i])
+            for(int j=a[i]; j<b[i]; j++)
+            {
+                arr[j]++;
 
+            }
+        else
+        {
+            for(int j=a[i]; j>b[i]; j--)
+            {
+                arr[j]++;
+
+            }
         }
         
 
