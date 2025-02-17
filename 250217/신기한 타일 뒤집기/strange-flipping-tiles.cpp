@@ -13,7 +13,7 @@ int main() {
 
     
 
-   char arr[200000]={'G'};
+   char arr[200001]={'G'};
    
     int cur=0;
 
@@ -55,7 +55,7 @@ int main() {
 
     int b=0,w=0;
 
-    for(int i=0; i<200000; i++)
+    for(int i=0; i<200001; i++)
     {
         if(arr[i]=='W')
         {
