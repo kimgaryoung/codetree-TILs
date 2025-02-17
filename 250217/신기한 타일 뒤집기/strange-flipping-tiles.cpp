@@ -25,7 +25,7 @@ int main() {
         if(c=='R')
         {
           
-            for(int j=cur+100000; j<cur+x+100000; j++)
+            for(long long j=cur+100000; j<cur+x+100000; j++)
             {
                 arr[j]='B';
             }
@@ -40,7 +40,7 @@ int main() {
         {
 
 
-            for(int j=cur-x+100000; j<cur+100000; j++)
+            for(long long j=cur-x+100000; j<cur+100000; j++)
             {
                 arr[j]='W';
             }
@@ -53,13 +53,15 @@ int main() {
       
     }
 
-    int b=0,w=0;
+    int  b=0,w=0;
 
     for(int i=0; i<200001; i++)
     {
         if(arr[i]=='W')
         {
             w++;
+
+
         }
         else if(arr[i]=='B')
         {
