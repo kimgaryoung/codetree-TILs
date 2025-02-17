@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+
     int n; 
     cin>>n; 
 
@@ -10,7 +11,7 @@ int main() {
 
     int cur=0;
 
-    int arr[2001]={0};
+    int arr[2000]={0};
 
     for(int i=0; i<n; i++)
     {
@@ -27,45 +28,43 @@ int main() {
            b[i]=cur+x;
 
            cur=cur+x;
-
-            a[i]=a[i]+1000;
-            b[i]=b[i]+1000;
-
-            for(int j=a[i]; j<b[i]; j++)
-            {
-                arr[j]++;
-
-            }
             
             
         }
         else if(c=='L')
         {  
-            a[i]=cur;
-            b[i]=cur-x;
+            a[i]=cur-x;
+            b[i]=cur;
 
            cur=cur-x;
+
+           
+        } 
 
             a[i]=a[i]+1000;
             b[i]=b[i]+1000;
 
-            for(int j=a[i]; j>b[i]; j--)
-            {
-                arr[j]++;
 
-            }
+    }
+
+
+
+
+    for(int i=0; i<n; i++)
+    {   
+       
+        for(int j=a[i]; j<b[i]; j++)
+        {
+            arr[j]++;
+
         }
-           
         
 
-    }    
-
-       
-
+    }
 
 
     int count=0; 
-    for(int i=0; i<2001; i++)
+    for(int i=0; i<2000; i++)
     {
         if(arr[i]>=2)
         {
