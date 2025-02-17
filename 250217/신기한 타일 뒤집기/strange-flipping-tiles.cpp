@@ -13,7 +13,7 @@ int main() {
 
     
 
-    int arr[200000]={0};
+   char arr[200000]={'G'};
    
     int cur=0;
 
@@ -27,7 +27,7 @@ int main() {
           
             for(int j=cur+100000; j<cur+x+100000; j++)
             {
-                arr[j]=arr[j]+i+1;
+                arr[j]='B';
             }
 
               
@@ -42,7 +42,7 @@ int main() {
 
             for(int j=cur-x+100000; j<cur+100000; j++)
             {
-                arr[j]=arr[j]-(i+1);
+                arr[j]='W';
             }
 
             cur=cur-x;
@@ -53,24 +53,21 @@ int main() {
       
     }
 
+    int b=0,w=0;
 
-    int w=0,b=0;
     for(int i=0; i<200000; i++)
     {
-        if(arr[i]>0)
-        {
-            b++;
-            
-        }
-        else if(arr[i]<0)
+        if(arr[i]=='W')
         {
             w++;
-            
         }
-
-        
-       
+        else if(arr[i]=='B')
+        {
+            b++;
+        }
     }
+
+
 
     cout<<w<<" "<<b;
     return 0;
