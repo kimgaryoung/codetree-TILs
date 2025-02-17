@@ -14,6 +14,8 @@ int main() {
     
 
    char arr[200001]={'G'};
+   int a[100000];
+   int B[100000];
    
     int cur=0;
 
@@ -24,8 +26,9 @@ int main() {
 
         if(c=='R')
         {
-          
-            for(long long j=cur+100000; j<cur+x+100000; j++)
+            a[i]=cur+10000;
+            B[i]=cur+x+10000;
+            for(int j=a[i]; j<B[i]; j++)
             {
                 arr[j]='B';
             }
@@ -39,8 +42,10 @@ int main() {
         else
         {
 
-
-            for(long long j=cur-x+100000; j<cur+100000; j++)
+            
+            a[i]=cur+10000-x;
+            B[i]=cur+10000;
+            for(int j=a[i]; j<B[i]; j++)
             {
                 arr[j]='W';
             }
