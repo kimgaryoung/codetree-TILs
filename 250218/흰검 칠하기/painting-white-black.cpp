@@ -29,10 +29,12 @@ int main() {
 
         if(c=='R')
         {
-           while(x--){
+           while(true){
             arr[cur]=2;
             cnt_b[cur]++;
+            --x;
             if(x!=0) cur++;
+            else break;
            
 
            }   
@@ -40,11 +42,13 @@ int main() {
         }
         else
         {
-            while(x--)
+            while(true)
             {
                 arr[cur]=1;
                 cnt_w[cur]++;
+                --x;
                 if(x!=0) cur--;
+                else break;
 
             }            
 
