@@ -56,7 +56,6 @@ int main() {
         for(int j=a[i]; j<b[i]; j++)
         {
             arr[j]++;
-            cout<<"j=" <<j <<" "<< "arr:"<<arr[j]<<"\n";
 
         }
         
