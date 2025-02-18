@@ -32,7 +32,7 @@ int main() {
            while(x--){
             arr[cur]=2;
             cnt_b[cur]++;
-            if(x) cur++;
+            if(x!=0) cur++;
            
 
            }   
@@ -44,9 +44,10 @@ int main() {
             {
                 arr[cur]=1;
                 cnt_w[cur]++;
-                if(x) cur--;
-                
-            }
+                if(x!=0) cur--;
+
+            }            
+
 
         }
 
