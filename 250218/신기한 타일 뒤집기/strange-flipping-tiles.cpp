@@ -53,7 +53,7 @@ int main() {
                 //cout<<"arr : j"<<arr[j]<<":"<<j<<"\n";
             }
 
-            cur=cur-x;
+            cur=cur-x-1;
 
         }
 
