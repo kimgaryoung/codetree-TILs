@@ -26,11 +26,13 @@ int main() {
 
         if(c=='R')
         {
-            a[i]=cur+10001;
+            a[i]=cur+10000;
             B[i]=cur+x+10000;
             for(int j=a[i]; j<B[i]; j++)
             {
                 arr[j]='B';
+
+                //cout<<"arr : j"<<arr[j]<<":"<<j<<"\n";
             }
 
               
@@ -43,11 +45,12 @@ int main() {
         {
 
             
-            a[i]=cur+10000;
-            B[i]=cur+10000-x;
+            a[i]=cur+10000-1;
+            B[i]=cur+10000-x-1;
             for(int j=a[i]; j>B[i]; j--)
             {
                 arr[j]='W';
+                //cout<<"arr : j"<<arr[j]<<":"<<j<<"\n";
             }
 
             cur=cur-x;
