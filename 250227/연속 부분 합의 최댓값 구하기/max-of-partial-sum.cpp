@@ -8,7 +8,15 @@ int arr[100000];
 
 int dp[100000]={INT_MIN};
 
-
+void func()
+{
+    for(int i=1; i<=n; i++)
+    {
+        dp[i]=INT_MIN;
+    }
+    dp[1]=arr[1];
+    
+}
    
         
   
@@ -20,7 +28,7 @@ int main() {
         cin >> arr[i];
     }
 
-    dp[1]=arr[1];
+    
 
     
 
