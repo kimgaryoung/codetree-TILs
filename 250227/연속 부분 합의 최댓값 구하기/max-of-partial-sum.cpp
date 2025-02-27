@@ -6,7 +6,7 @@ using namespace std;
 int n;
 int arr[100000];
 
-int dp[100000]={INT_MIN};
+int dp[100000];
 
 void func()
 {
