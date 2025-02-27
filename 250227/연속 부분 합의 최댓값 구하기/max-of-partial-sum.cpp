@@ -15,7 +15,7 @@ void func()
         dp[i]=INT_MIN;
     }
     dp[1]=arr[1];
-    
+
 }
    
         
@@ -30,7 +30,7 @@ int main() {
 
     
 
-    
+    func();
 
     for(int i=2; i<=n; i++)
         dp[i]=max(dp[i-1]+arr[i], arr[i]);
