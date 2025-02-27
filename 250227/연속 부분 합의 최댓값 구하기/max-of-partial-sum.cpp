@@ -1,14 +1,15 @@
 #include <iostream>
 #include<climits>
+#include<algorithm>
 
 using namespace std;
 
 int n;
-int arr[100000];
+int arr[100001];
 
-int dp[100000];
+int dp[100001];
 
-void func()
+void func() 
 {
     for(int i=1; i<=n; i++)
     {
