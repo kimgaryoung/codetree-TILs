@@ -1,11 +1,12 @@
 #include <iostream>
+#include<climits>
 
 using namespace std;
 
 int n;
 int arr[100000];
 
-int dp[100000]={0};
+int dp[100000]={INT_MIN};
 
 
    
@@ -26,7 +27,7 @@ int main() {
     for(int i=2; i<=n; i++)
         dp[i]=max(dp[i-1]+arr[i], arr[i]);
     
-    int ans = 0;
+    int ans = INT_MIN;
     for(int i=1; i<=n; i++)
         ans =max(ans,dp[i]);
 
