@@ -5,9 +5,9 @@
 using namespace std;
 
 int n;
-int arr[100000];
+int arr[100001];
 
-int dp[100000];
+int dp[100001];
 
 void func() 
 {
