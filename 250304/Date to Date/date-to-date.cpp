@@ -9,14 +9,15 @@ int main() {
 
     int arr[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
-    int day=0;
+    int day=1;
     while(true)
     {
         if(m1==m2 && d1==d2)
             break;
 
-        day++;
         d1++;
+        day++;
+        
         
         if(d1>arr[m1])
         {
