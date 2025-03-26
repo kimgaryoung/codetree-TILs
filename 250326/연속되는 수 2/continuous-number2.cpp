@@ -22,7 +22,7 @@ int main() {
 
     }
 
-    int max=0;
+    int max=1;
     for(int i=1; i<n; i++)
     {
         if(c[i]>c[i-1])
