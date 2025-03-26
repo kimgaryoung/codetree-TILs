@@ -22,6 +22,19 @@ int main() {
 
     }
 
-    cout<<c[n-1];
+    int max=0;
+    for(int i=1; i<n; i++)
+    {
+        if(c[i]>c[i-1])
+        {
+            max=c[i];
+        }
+        else
+        {
+            max=c[i-1];
+        }
+    }
+
+    cout<<max;
     return 0;
 }
