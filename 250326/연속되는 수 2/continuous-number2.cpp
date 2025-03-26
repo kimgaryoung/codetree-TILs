@@ -1,4 +1,5 @@
 #include <iostream>
+#include<algorithm>
 using namespace std;
 
 int main() {
@@ -7,34 +8,34 @@ int main() {
     int n;
     cin>>n;
 
-    int cnt=1;
-    int c[n];
-    int arr[n];
+    int cnt=0;
+    int a=0;
+
+    int arr[1000];
+
     for(int i=0; i<n; i++)
     {
         cin>>arr[i];
+    }
 
-        if(i==0 || arr[i-1]!=arr[i])
+
+    for(int i=0; i<n; i++)
+    {
+       
+        if(i>=1 || arr[i]==arr[i-1])
         {
             cnt++;
         }
-        c[i]=cnt;
-
-    }
-
-    int max=1;
-    for(int i=1; i<n; i++)
-    {
-        if(c[i]>c[i-1])
-        {
-            max=c[i];
-        }
         else
         {
-            max=c[i-1];
+            cnt=1;
         }
+        
+        a=max(a,cnt);
+       
     }
 
-    cout<<max;
+    
+    cout<<a;
     return 0;
 }
