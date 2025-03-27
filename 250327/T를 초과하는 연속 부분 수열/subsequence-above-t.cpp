@@ -22,7 +22,7 @@ int main() {
 
     for(int i=0; i<n; i++)
     {
-        if(i!=0 &&  (arr[i-1]>k) && (arr[i]> arr[i-1]) )
+        if(i!=0 &&   arr[i-1]>k && arr[i]>k )
         {
             cnt++;
         }
