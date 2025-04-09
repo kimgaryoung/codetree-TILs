@@ -6,6 +6,7 @@ int main() {
     int m,n,k;
     cin>>n>>k>>m;
     
+    int ans=-1;
     int stu[n];
     for(int i=0; i<n; i++)
     {
@@ -17,20 +18,20 @@ int main() {
     {
         cin>>tmp;
 
+           
         stu[tmp-1]--;
+      
+
+
+      if (stu[tmp-1]<=0)
+      {
+        ans=tmp;
+        break;
+      }
 
     }
 
-    int ans=-1;
-
-    for(int i=0; i<n; i++)
-    {
-        if(stu[i]<=0)
-        {
-            ans=i+1;
-            break;
-        }
-    }
+    
 
     cout<<ans;
 
