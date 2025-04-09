@@ -14,7 +14,7 @@ int main() {
     int t=0;
     char d=' ';
     
-    /*
+    
     int pos=1; 
     for(int i=0; i<n; i++)
     {
@@ -29,7 +29,7 @@ int main() {
             {
             
 
-                a[pos]=a[pos+1]+1;
+                a[pos]=a[pos-1]+1;
                 pos++;
 
             }
@@ -63,7 +63,7 @@ int main() {
             while(t--)
             {
         
-                b[pos]=b[pos+1]+1;
+                b[pos]=b[pos-1]+1;
                 pos++;
 
             }
@@ -82,52 +82,8 @@ int main() {
             }
         }
     }
-*/
-
-    int pos=1;
-
-    for(int i=0; i<n; i++)
-    {
-        cin>>d>>t;
-
-        while(t--)
-        {
-            if(d=='R')
-            {
-                a[pos]=a[pos-1]+1;
-            }
-            else
-            {
-                a[pos]=a[pos-1]-1;
-            }
-
-            pos++;
-        }
-        
-    }
 
 
-    pos=1;
-    d=' ';
-    t=0;
-    for(int i=0; i<m; i++)
-    {
-        cin>>d>>t;
-
-        while(t--)
-        {
-            if(d=='R')
-            {
-                b[pos]=b[pos-1]+1;
-            }
-            else
-            {
-                b[pos]=b[pos-1]-1;
-            }
-            pos++;
-        }
-    }
-    
     int ans=-1;
 
     //cout<<pos;
