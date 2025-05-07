@@ -66,7 +66,7 @@ int main() {
     int cnt=0;
     int leader=0;
     // 비교하는 과정 
-    for(int i=1; i<t_sum; i++)
+    for(int i=0; i<t_sum; i++)
     {
         
      //cout<<"A배열"<<" "<<A[i]<<"\n";
