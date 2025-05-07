@@ -64,26 +64,33 @@ int main() {
         
     }
     int cnt=0;
-
+    int leader=0;
     // 비교하는 과정 
     for(int i=1; i<t_sum; i++)
     {
         
      //cout<<"A배열"<<" "<<A[i]<<"\n";
      //cout<<"B배열"<<" "<<B[i]<<"\n";
-        if(A[i]>B[i]&& A[i-1]<=B[i-1])
+        if(A[i]>B[i])
         {
-            cnt++;
-            //cout<<"index="<<i<<"\n";
-           
+            if(leader==2)
+            {
+                cnt++;
+                //cout<<"index="<<i<<"\n";
+            }
+            leader=1;
             
         }
-        else if(A[i]<B[i]&& A[i-1]>=B[i-1]) 
+        else if(A[i]<B[i]) 
         {
-            cnt++;
-            //cout<<"index="<<i<<"\n";
+            if(leader==1)
+                cnt++;
+                //cout<<"index="<<i<<"\n";
+            leader=2;
             
         }
+        
+        
 
        
     }
