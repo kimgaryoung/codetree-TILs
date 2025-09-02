@@ -13,6 +13,7 @@ int main() {
      int v,t;
 
      int idx=1; 
+     int sum=0;
      
      arr[0]=0;
      brr[0]=0;
@@ -39,9 +40,11 @@ int main() {
 
 
     idx=1;
+    
      for (int i=0; i<m; i++)
      {
         cin>>v>>t;
+
         for(int j=0; j<t; j++)
         {
             brr[idx++]=brr[idx-1]+v;
