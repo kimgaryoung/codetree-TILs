@@ -21,6 +21,10 @@ int main() {
 
         cin>>c;
 
+        if(c!='R'&&c!='L'&&c!='F')
+        {
+            break;
+        }
         
         
 
@@ -39,15 +43,11 @@ int main() {
            
             x+=dx[dir];
             y+=dy[dir];
-            break;
             
-
             
         }
-        else
-        {
-            break;
-        }
+        c=' ';
+        
     }
        
 
