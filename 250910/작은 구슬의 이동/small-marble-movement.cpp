@@ -51,6 +51,8 @@ int main() {
     int cnt=0;
     int nx=x,ny=y;
 
+    int cor=0;
+
     dir=Input();// 입력에 따라 함수 호출 
 
     while(cnt<T)
@@ -75,6 +77,8 @@ int main() {
                 dir=3;
             }
             cnt++;
+            cor=1;
+            
         }
 
         //cout<<" "<<nx<<" "<<ny<<"\n";
@@ -97,7 +101,15 @@ int main() {
                 nx++;
                 dir=0;
             }
-            cnt++;
+
+            if(cor=1)
+            { 
+                cor=0;
+            }
+            else
+            {
+                cnt++;
+            }
             
             
         }
