@@ -80,7 +80,7 @@ int main() {
         }
         else 
         {
-            cout<<arr[0][0];
+            
             break;
         }
 
@@ -90,11 +90,15 @@ int main() {
         
     }
 
-    if (arr[0][0]==0)
+    if (arr[0][0]!=0)
     {
-  
-        cout<<"-1";
+        cout<<arr[0][0];
     }
+    else 
+    {
+        cout<<-1;
+    }
+  
 
 
 
