@@ -8,6 +8,8 @@ int arr[1001][1001]={};
 
 
 
+
+
 int dx[4]={0,1,0,-1};
 int dy[4]={1,0,-1,0};
 
@@ -28,14 +30,14 @@ int main() {
    
     
 
-    int x=0,y=0;
+    int x=500,y=500;
 
     for(int i=0; i<N; i++)
     {
         
         cin>>c>>m;
 
-        if(arr[0][0]==0){
+        if(arr[500][500]==0){
         if(c=='N' )
         {
             for(int i=0; i<m; i++)
@@ -90,9 +92,9 @@ int main() {
         
     }
 
-    if (arr[0][0]!=0)
+    if (arr[500][500]!=0)
     {
-        cout<<arr[0][0];
+        cout<<arr[500][500];
     }
     else 
     {
