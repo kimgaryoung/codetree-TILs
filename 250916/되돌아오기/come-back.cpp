@@ -4,7 +4,7 @@ using namespace std;
 int N;
 int num=0;
 
-int arr[1000][1000]={};
+int arr[1001][1001]={};
 
 
 
