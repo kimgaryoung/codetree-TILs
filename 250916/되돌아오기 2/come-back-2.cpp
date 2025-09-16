@@ -17,7 +17,7 @@ int main() {
     char c;
 
     int x=50000,y=50000; 
-    int num=2;
+    int num=1;
 
     while(cin>>c)// 입력이 있을때 까지 수행.
     {
@@ -30,11 +30,17 @@ int main() {
 
                 if (nx[fn]!=0 && ny[fn]!=0)
                 {
-                    break;
+                    cout<<num+1;
+                    return 0;
                 }
-            
+
+               
+                
                 nx[x]=num++;
                 ny[y]=1;
+                 
+            
+               
                 //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
                 
             }
@@ -55,14 +61,9 @@ int main() {
         }
         
     
-        if(nx[fn]!=0 && ny[fn]!=0)
-        {
-            cout<<num;
-        }
-        else
-        {
+        
             cout<< -1;
-        }
+        
     
     
 
