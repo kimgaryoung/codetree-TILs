@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int arr[10001][10001]={};
+int arr[100001][100001]={};
 
-const int fn=5000;
+const int fn=50000;
 
 
 int dx[4]={0,1,0,-1};
