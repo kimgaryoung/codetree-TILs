@@ -25,19 +25,21 @@ int main() {
         
             if(c=='F')
             {
+                num+=1;
                 x=x+dx[dir];
                 y=y+dy[dir];
 
                 if (nx[fn]!=0 && ny[fn]!=0)
                 {
-                    cout<<num+1;
+                    cout<<num;
                     return 0;
                 }
 
-               
+
+                nx[x]=num;
+                ny[y]=num;
+
                 
-                nx[x]=num++;
-                ny[y]=1;
                  
             
                
@@ -46,14 +48,16 @@ int main() {
             }
             else if(c=='L')
             {
+                num+=1;
                 dir=(dir-1)%4;
-                num++;
+                
                 //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
             }
             else if(c=='R')
             {
+                num+=1;
                 dir=(dir-1+4)%4;
-                num++;
+                
                 //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
             }
             
