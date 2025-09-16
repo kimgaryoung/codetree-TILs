@@ -56,7 +56,7 @@ int main() {
             else if(c=='R')
             {
                 num+=1;
-                dir=(dir-1)%4;
+                dir=(dir+1)%4;
                 
                 //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
             }
