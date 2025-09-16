@@ -2,75 +2,51 @@
 
 using namespace std;
 
+// 2차원 경로를 정확히 추적하기 위해 2차원 배열을 사용하는 것이 좋습니다.
+// 기존 코드 구조를 유지하면서 논리만 수정합니다.
 int nx[100001]={};
 int ny[100001]={};
 
 const int fn = 50000;
 
-
 int dx[4]={0,1,0,-1};
 int dy[4]={1,0,-1,0};
 
 int main() {
-
     int dir=0;
     char c;
 
     int x=50000,y=50000; 
     int num=1;
 
-    while(cin>>c)// 입력이 있을때 까지 수행.
-    {
-        
-        
-            if(c=='F')
-            {
-                num+=1;
-                x=x+dx[dir];
-                y=y+dy[dir];
+    nx[x] = num;
+    ny[y] = 1;
 
-                if (nx[fn]!=0 && ny[fn]!=0)
-                {
-                    cout<<num;
-                    return 0;
-                }
-
-
-                nx[x]=num;
-                ny[y]=num;
-
-                
-                 
+    while(cin>>c) {
+        if(c=='F') {
+          
+            x=x+dx[dir];
+            y=y+dy[dir];
             
-               
-                //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
-                
+            // 이동 후 현재 위치가 시작점인지 확인
+            if (x == fn && y == fn) {
+                cout << num;
+                return 0;
             }
-            else if(c=='L')
-            {
-                num+=1;
-                dir=(dir-1+4)%4;
-                
-                //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
-            }
-            else if(c=='R')
-            {
-                num+=1;
-                dir=(dir+1)%4;
-                
-                //cout<<"x"<<x<<"y"<<y<<"arr값"<<num<<"\n";
-            }
+            num+=1;
             
+            nx[x] = 1;
+            ny[y] = 1;
 
+        } else if(c=='L') {
+            num++;
+            dir=(dir - 1 + 4) % 4;
+        } else if(c=='R') {
+            num++;
+            dir=(dir + 1) % 4;
         }
-        
+    }
     
-        
-        cout<< -1;
-        
-    
-    
-
-    // Please write your code here.
+    cout << -1;
     return 0;
 }
