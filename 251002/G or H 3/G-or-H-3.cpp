@@ -11,7 +11,9 @@ int main() {
 
     // G=1, H=2
 
-    int arr[100001]={};
+    //cout<<arr[16];
+
+    int arr[10001]={};
 
     int a;
     char c;
@@ -30,12 +32,15 @@ int main() {
             //cout<<a<<"a의 값은"<<arr[a]<<"\n";
         }
     }
-
+    //cout<<arr[9126];
 
     int val;
     int sum=INT_MIN;
 
-    for(int i=1; i<=n-k+1; i++)
+    //cout<<INT_MIN;
+
+
+    for(int i=1; i<=10000-k; i++)
     {
         val=0;
         for(int j=i; j<=i+k; j++)
