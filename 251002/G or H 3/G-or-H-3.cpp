@@ -11,7 +11,7 @@ int main() {
 
     // G=1, H=2
 
-    int arr[10000]={};
+    int arr[100001]={};
 
     int a;
     char c;
