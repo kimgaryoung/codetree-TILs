@@ -27,7 +27,7 @@ int main() {
         }
         else 
         {
-            arr[i]=0;
+            arr[i]=-1;
         }
    
 
@@ -40,7 +40,7 @@ int main() {
     //cout<<num<<"\n";
     
     int sum,m=0;
-    int tmp=0;
+    bool c;
 
     for(int i=num; i<=9; i++)
     {
@@ -48,19 +48,34 @@ int main() {
        if(arr[i]==0)
        {
 
-            tmp=i;
+            c=false;
             arr[i]=1;
             //cout<<i<<"번째"<<arr<<"\n";
        }
+       else if(arr[i]==1)
+       {
+          c=true;
+          arr[i]=0;
+       }
+       
         
         for(int j=0; j<10-num; j++)// 2진수 계산 
         {
             sum+=arr[9-j]*pow(2,j);
 
-            
         }
 
-        arr[tmp]=0;
+
+        if(c)
+        {
+            arr[i]=1;
+        }
+        else
+        {
+            arr[i]=0;
+        }
+
+        
 
         //cout<<sum<<"\n";
 
