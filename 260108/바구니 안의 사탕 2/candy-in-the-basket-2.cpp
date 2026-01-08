@@ -28,6 +28,7 @@ int main() {
 
     int sum=0;
     int cor_a=0;
+    /*
     for(int i=k; i<=m_idx-k; i++)// 중심
     {
         sum=0;
@@ -35,6 +36,27 @@ int main() {
         {
             
                 sum+=arr[j];
+           
+
+        }
+
+        cor_a=max(cor_a,sum);
+
+
+
+    }
+
+    */
+
+    for(int i=0; i<=100; i++)// 중심
+    {
+        sum=0;
+        for(int j=i-k; j<=i+k; j++) // 더할 범위 
+        {
+            if(j>=0 && j<=100)
+            {
+                sum+=arr[j];
+            }
            
 
         }
