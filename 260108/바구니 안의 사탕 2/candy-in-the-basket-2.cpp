@@ -33,7 +33,8 @@ int main() {
         sum=0;
         for(int j=i-k; j<=i+k; j++) // 더할 범위 
         {
-            sum+=arr[j];
+            if(j >= 0 && j <= 100)
+                sum+=arr[j];
            
 
         }
