@@ -34,6 +34,7 @@ int main() {
         for(int j=0; j<=i+k; j++) // 더할 범위 
         {
             sum+=arr[j];
+           
 
         }
 
