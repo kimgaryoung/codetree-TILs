@@ -28,10 +28,10 @@ int main() {
 
     int sum=0;
     int cor_a=0;
-    for(int i=k; i<m_idx-k; i++)// 중심
+    for(int i=k; i<=m_idx-k; i++)// 중심
     {
         sum=0;
-        for(int j=0; j<=i+k; j++) // 더할 범위 
+        for(int j=i-k; j<=i+k; j++) // 더할 범위 
         {
             sum+=arr[j];
            
