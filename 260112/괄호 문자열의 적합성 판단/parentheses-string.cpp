@@ -13,13 +13,13 @@ int main() {
 
     for(int i=0; i<str.length(); i++)
     {
-        if(str[i]=="(")
+        if(str[i]=='(')
         {
-            s.push('(')
+            s.push('(');
         }
         else 
         {
-            if(s.empty)
+            if(s.empty())
             {
                 cout<<"No";
                 return 0;
@@ -30,13 +30,15 @@ int main() {
         }
     }
 
-    if(!s.empty)
+    if(s.empty())
     {
-        cout<<"No";
+        cout<<"Yes";
+        
     }
     else 
     {
-        cout<<"Yes";
+        cout<<"No";
+       
     }
 
 
