@@ -8,8 +8,8 @@ using namespace std;
 
 int n, m;
 
-int dx[4]={-1,0,1,0};
-int dy[4]={0,1,0,-1};
+int dx[4]={1,0};
+int dy[4]={0,1};
 
 int board[501][501];
 int vis[501][501];
