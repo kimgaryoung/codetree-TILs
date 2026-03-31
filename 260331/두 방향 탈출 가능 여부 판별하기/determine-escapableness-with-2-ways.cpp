@@ -51,8 +51,9 @@ int main() {
             if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
             if(vis[nx][ny]==1|| board[nx][ny]!=1) continue;
 
-            s.push({nx,ny});
             vis[nx][ny]=1;
+            s.push({nx,ny});
+            
 
 
 
