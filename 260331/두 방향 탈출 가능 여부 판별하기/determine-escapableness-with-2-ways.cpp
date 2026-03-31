@@ -11,13 +11,15 @@ int n, m;
 int dx[4]={-1,0,1,0};
 int dy[4]={0,1,0,-1};
 
+int board[501][501];
+int vis[501][501];
+
+
 int main() {
     cin >> n >> m;
 
     
-    int board[501][501];
-    int vis[501][501];
-
+    
 
     for(int i=0; i<n; i++)
     {
@@ -34,14 +36,16 @@ int main() {
 
 
     stack<pair<int,int>>s;
-    s.push({0,0});
     vis[0][0]=1;
+    s.push({0,0});
+    
 
 
     bool found =false;
     while(!s.empty())
     {
-        pair<int,int>cur=s.top();s.pop();
+        pair<int,int>cur=s.top();
+        s.pop();
 
         if(cur.X==n-1 && cur.Y==m-1) 
         {
