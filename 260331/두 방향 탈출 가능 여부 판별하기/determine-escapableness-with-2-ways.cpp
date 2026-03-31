@@ -14,9 +14,9 @@ int dy[4]={0,1,0,-1};
 int main() {
     cin >> n >> m;
 
-    vector<vector<int>>board;
-    //int board[n][m];
-    int vis[n][m];
+    
+    int board[501][501];
+    int vis[501][501];
 
 
     for(int i=0; i<n; i++)
@@ -25,11 +25,9 @@ int main() {
         {
             vis[i][j]=0; // 초기화
 
-            int tmp;
+           
 
-            cin>>tmp;
-
-            board[i].push_back(tmp);
+            cin>>board[i][j];
 
         }
     }
