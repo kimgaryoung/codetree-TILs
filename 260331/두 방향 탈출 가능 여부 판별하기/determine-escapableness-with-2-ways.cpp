@@ -14,8 +14,10 @@ int dy[4]={0,1,0,-1};
 int main() {
     cin >> n >> m;
 
-    int board[n][m];
+    vector<vector<int>>board;
+    //int board[n][m];
     int vis[n][m];
+
 
     for(int i=0; i<n; i++)
     {
@@ -23,13 +25,19 @@ int main() {
         {
             vis[i][j]=0; // 초기화
 
-            cin>>board[i][j];// 배열 채워뿌자
+            int tmp;
+
+            cin>>tmp;
+
+            board[i].push_back(tmp);
 
         }
     }
 
 
     stack<pair<int,int>>s;
+    s.push({0,0});
+    vis[0][0]=1;
 
     while(!s.empty())
     {
