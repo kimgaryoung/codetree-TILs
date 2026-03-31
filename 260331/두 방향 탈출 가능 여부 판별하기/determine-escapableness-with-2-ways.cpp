@@ -33,7 +33,7 @@ int main() {
 
     while(!s.empty())
     {
-        pair<int,int>cur=s.top;s.pop;
+        pair<int,int>cur=s.top();s.pop();
 
         if(cur.X==n-1 && cur.Y==m-1) return 1;
 
