@@ -53,7 +53,7 @@ int main() {
             break;
         }
 
-        for(int i=0; i<4; i++)
+        for(int i=0; i<2; i++)
         {
             int nx =cur.X + dx[i];
             int ny =cur.Y + dy[i];
