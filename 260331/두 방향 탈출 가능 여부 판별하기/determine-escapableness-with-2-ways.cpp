@@ -37,11 +37,17 @@ int main() {
     s.push({0,0});
     vis[0][0]=1;
 
+
+    bool found =false;
     while(!s.empty())
     {
         pair<int,int>cur=s.top();s.pop();
 
-        if(cur.X==n-1 && cur.Y==m-1) return 1;
+        if(cur.X==n-1 && cur.Y==m-1) 
+        {
+            found=true;
+            break;
+        }
 
         for(int i=0; i<4; i++)
         {
@@ -53,12 +59,18 @@ int main() {
 
             vis[nx][ny]=1;
             s.push({nx,ny});
-            
-
-
 
         }
 
+    }
+
+    if(found)
+    {
+        cout<<1;
+    }
+    else
+    {
+        cout<<0;
     }
    
 
