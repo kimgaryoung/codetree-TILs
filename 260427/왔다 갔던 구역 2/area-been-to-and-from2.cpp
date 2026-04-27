@@ -19,7 +19,7 @@ int main() {
         char cmd;
         cin>> num>>cmd;
 
-        for(int j=0; j<num; j++)
+        for(int j=0; j<=num; j++)
         {
             if(cmd=='L')// 문자열이랑 문자에서 ""와 ''구분 때문에 시간 뺏김
             {
@@ -33,6 +33,7 @@ int main() {
             }
 
         }
+
 
     }      
 
