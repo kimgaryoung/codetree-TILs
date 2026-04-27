@@ -73,14 +73,7 @@ int main() {
 
                     */
                 
-                 if(len > max_num) {
-                    max_num = len;
-                    ans = dist;
-                }
-                else if(len == max_num) {
-                    ans = max(ans, dist);
-                }
- 
+               ans = max(ans, dist);
 
                 
                 
