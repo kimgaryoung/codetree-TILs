@@ -6,11 +6,15 @@ int main()
 {
 
   // 런타임 에러 이유 못 밝힘.
+  //   계속 블랙이 1개 많게 나옴 
     int n; 
     cin>> n; 
 
     vector<int>v;// 양
     vector<int>v_m;//음 
+
+     v.push_back(0);
+     v_m.push_back(0);
 
 
     int cur=0;//현재 
@@ -27,64 +31,30 @@ int main()
         {
             v.push_back(0);
             v_m.push_back(0);
-            
-            if(c=='L')//흰 
-            {
-               if(cur<0)
-               {
-                  cur_m=cur*(-1);
 
-                  v_m[cur_m]=-1;
-                  --cur;
-               }
-               else if(cur>0)
-               {
+            if(c=='L')
+{
+    cur--;
 
-                 v[cur]=-1;
-                 --cur;
+    if(cur >= 0) v[cur] = -1;
+    else v_m[-cur] = -1;
+}
+else
+{
+    if(cur >= 0) v[cur] = 1;
+    else v_m[-cur] = 1;
 
-               }
-               else
-               {
-                 v[0]=-2;
-                 v_m[0]=-2;
-                 cur=-1;
-
-
-               }
-
-            }
-            else if(c=='R')// 검 
-            {
-                if(cur<0)
-               {
-                  
-                  cur_m=cur*(-1);
-
-                  v_m[cur_m]=1;
-                  ++cur;
-               }
-               else if(cur>0)
-               {
-                 v[cur]=1;
-                 cur++;
-
-               }
-               else
-               {
-                  v[0]=2;
-                  v_m[0]=2;
-                  cur=1;
-               }
-
-            }
-          
-
+    cur++;
+}
+               
         }
+             
+
+    }
 
 
       
-        }
+        
 
 
        
@@ -120,14 +90,7 @@ int main()
 
         }
 
-        if(v[0]==2)
-        {
-            //b++;
-        }
-        else if(v[0]==-2)
-        {
-            w++;
-        }
+       
 
        cout<<w<<" "<<b;
 
