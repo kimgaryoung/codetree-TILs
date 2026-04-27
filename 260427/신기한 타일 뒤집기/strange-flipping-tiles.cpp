@@ -28,26 +28,29 @@ int main()
 
 
         for(int j=0; j<input; j++)
-        {
-            v.push_back(0);
-            v_m.push_back(0);
-
-            if(c=='L')
 {
-    cur--;
+    v.push_back(0);
+    v_m.push_back(0);
 
-    if(cur >= 0) v[cur] = -1;
-    else v_m[-cur] = -1;
-}
-else
-{
-    if(cur >= 0) v[cur] = 1;
-    else v_m[-cur] = 1;
+    if(c=='L')
+    {
+        if(cur >= 0) v[cur] = -1;
+        else v_m[-cur] = -1;
 
-    cur++;
+        cur--;
+    }
+    else if(c=='R')
+    {
+        if(cur >= 0) v[cur] = 1;
+        else v_m[-cur] = 1;
+
+        cur++;
+    }
 }
-               
-        }
+
+// 명령 끝난 뒤 위치 보정
+if(c == 'L') cur++;
+else if(c == 'R') cur--;
              
 
     }
