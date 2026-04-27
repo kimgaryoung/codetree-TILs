@@ -15,7 +15,7 @@ int main() {
    //int arr[100];
    //char crr[100];
 
-   pair<int,char>arr[101];
+   pair<int,char>arr[101]; // 자료형이 다른데 서로 종속 변수 일때
 
     
 
@@ -55,25 +55,16 @@ int main() {
 
             }
 
-             int len = j - i + 1;
-            int dist = arr[j].first - arr[i].first;
+          
+            
 
 
             
             if(cntg==cnth ||cntg==j-i+1 || cnth==j-i+1)
             {
-                /* 갯수가 같은 경우를 
-                    if((cntg+cnth)>=max_num)
-                    {
-                        max_num=cntg+cnth;
-                        ans=arr[j].first-arr[i].first;
-                        
-                        //cout<<arr[i]<<" "<<arr[j]<<" "<<"\n";
-                    }
-
-                    */
+               
                 
-               ans = max(ans, dist);
+               ans = max(arr[j].first - arr[i].first, ans);
 
                 
                 
