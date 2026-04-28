@@ -7,9 +7,9 @@ int main() {
 
     cin>>a>>b>>c>>d;
 
-    int arr[100];
+    int arr[101];
     
-    for(int i=0; i<100; i++)
+    for(int i=0; i<101; i++)
     {
         arr[i]=0;
 
@@ -32,7 +32,7 @@ int main() {
     bool clean1=false;
     int cnt=0;
 
-    for(int i=0; i<100; i++)
+    for(int i=0; i<101; i++)
     {
         if(arr[i]!=0)
         {
@@ -51,6 +51,11 @@ int main() {
 
     if(clean1)// 겹침
     {
+        if(a ==0||c ==0)
+        {
+            cout<<cnt;
+            return 0;
+        }
         cout<<cnt-1;
     }
     else
