@@ -32,7 +32,7 @@ int main() {
     bool clean1=false;
     int cnt=0;
 
-    for(int i=0; i<101; i++)
+    for(int i=0; i<100; i++)
     {
         if(arr[i]!=0)
         {
