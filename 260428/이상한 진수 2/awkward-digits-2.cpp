@@ -35,7 +35,7 @@ int main() {
 
     if(cnt==len)
     {
-        cout<<all_sum;
+        cout<<all_sum-1;
         return 0;
     }
 
