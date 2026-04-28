@@ -21,6 +21,28 @@ int main() {
         arr[i]=0;
     }
 
+    // 전부 1인 경우
+    int cnt=0;
+    int all_sum=0; 
+    for(int i=0;i<len; i++)
+    {
+        if(a[i]!='0')
+        {
+            cnt++;
+            all_sum+=pow(2,len-i-1);
+        }
+    }
+
+    if(cnt==len)
+    {
+        cout<<all_sum;
+        return 0;
+    }
+
+
+
+
+
     for(int i=0;i<len; i++)
     {
         int sum=0;
@@ -39,7 +61,13 @@ int main() {
             a[i]='0';
             //cout<<arr[i]<<"\n";
         }
+       
     }
+
+
+    
+
+  
 
     int o=0;
     for(int i=0; i<len; i++)
