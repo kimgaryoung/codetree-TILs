@@ -12,28 +12,24 @@ int main() {
 
     cin>>a1>>b1>>a2>>b2;
 
-    int n=0;
+   
 
 
-    if(x1>a2 ||a1>x2)
+    if((x1>a2 ||a1>x2))
     {
-        n++;
+        cout<<"nonoverlapping";
+        return 0;
 
     }
     
     if(y1>b2 || b1>y2)
     {
-        n++;
+        cout<<"nonoverlapping";
+        return 0;
     }
 
-    if(n==2)
-    {
-        cout<<"nonoverlapping";
-    }
-    else
-    {
-        cout<<"overlapping";
-    }
+    cout<<"overlapping";
+    
 
 
 
