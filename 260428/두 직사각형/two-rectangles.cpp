@@ -15,7 +15,7 @@ int main() {
    
 
 
-    if((x1>a2 ||a1>x2))
+    if(x1>a2 ||a1>x2)
     {
         cout<<"nonoverlapping";
         return 0;
